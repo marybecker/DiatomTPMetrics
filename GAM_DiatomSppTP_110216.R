@@ -1,6 +1,6 @@
 #######Calculate Tolerance Values for Individual Species#####
 
-setwd (#ADD WD HERE#)
+setwd (#SET WD)
 
 library(gam)
 
