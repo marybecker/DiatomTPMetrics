@@ -1,11 +1,12 @@
 #######Calculate Tolerance Values for Individual Species#####
 
-setwd ()#SET WD
+setwd ("")#SET WD
 
 library(gam)
 
-spp <- read.csv ("data/SPP_032917.csv",header=TRUE,row.names=1)
+spp <- read.csv ("data/SPP_033017.csv",header=TRUE,row.names=1)
 TP <- read.csv ("data/TP.csv",header=TRUE,row.names=1)
+TP$TP <- log(TP$TP+1)
 
 taxa.names <- names(spp)
 
@@ -82,7 +83,6 @@ SPP.TP1 <- merge (spp,TP,by=0)
 n<- 1000
 CURVEoutput<- matrix(nrow=length(taxa.names),ncol=n)
 ROCoutput<- matrix(nrow=length(taxa.names),ncol=n)
-ChiOutput<-matrix(nrow=length(taxa.names),ncol=n)
 
 for(k in 1:n) {
 
@@ -104,13 +104,8 @@ for (i in 1:length(taxa.names)) {
   # to the curve fit.
   modlist.gam[[i]] <- gam(resp ~ s(SPP.TP$TP, df = 2),
 			  family = "binomial")
-  modchi<-anova(modlist.gam[[i]],test="Chi")
-  chi[i]<-modchi[2,'P(Chi)']
   
 }
-
-chi_mat<-as.matrix(chi)
-ChiOutput[,k]<-chi_mat[,1]
 
 tolcl <- rep("", times = length(taxa.names)) 
 for (i in 1:length(taxa.names)) {
@@ -175,12 +170,12 @@ IncrCnt<- rowSums(CURVEoutput=="Increasing",na.rm=TRUE)
 DecrCnt<- rowSums(CURVEoutput=="Decreasing",na.rm=TRUE)
 UniCnt<- rowSums(CURVEoutput=="Unimodal",na.rm=TRUE)
 ROCCnt<- rowSums(ROCoutput>=0.6,na.rm=TRUE)
-ChiCnt<- rowSums(ChiOutput<0.05,na.rm=TRUE)
+
 names(ROCCnt)<-taxa.names
 
-CurveCnt<- cbind(ROCCnt,ChiCnt,IncrCnt,DecrCnt,UniCnt)
+CurveCnt<- cbind(ROCCnt,IncrCnt,DecrCnt,UniCnt)
 
-write.table(CurveCnt,"CurveSppGAM032917.csv",sep=",",row.names=TRUE,col.names=NA)
+write.table(CurveCnt,"CurveSppGAM033017.csv",sep=",",row.names=TRUE,col.names=NA)
 
 
 #######Plots with Whole Model#############
@@ -247,12 +242,13 @@ for (i in 1:length(taxa.names)) {
   # Now generate the plot
   # Plot binned observational data as symbols.
   
-  file_name<- file.path("P:/Projects/GitHub_Prj/DiatomTPMetrics/Plots",paste("GAM","_",taxa.names[i],".tiff"))
+  file_name<- file.path("/Users/tbecker/Documents/Projects/GitHubProjects/DiatomTPMetrics/Plots",
+                        paste("GAM","_",taxa.names[i],".tiff"))
   tiff(file=file_name,width=600,height=600,pointsize=20)
   
   plot(x=cutm, y=vals, xlab = "Total Phosphorus (mg/L)", 
        ylab = "Probability of occurrence", ylim = c(0,1),
-       main = taxa.names[i],log="x",pch=16,col="black")		
+       main = taxa.names[i],pch=16,col="black")		
   # Plot mean fit as a solid line.		
   lines(x= SPP.TP$TP[iord], y= mean.resp[iord],col="red",lwd=2)
   # Plot confidence limits as dotted lines.				

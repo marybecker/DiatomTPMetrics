@@ -1,6 +1,6 @@
 setwd ("")#SET WD#
 
-INDICES <-  read.csv ("data/DiatomMetrics_112316.csv",sep=",",header=TRUE)
+INDICES <-  read.csv ("data/DiatomMetrics_033017.csv",sep=",",header=TRUE)
 pHINDICES<- read.csv ("data/DiatomMetricspH.csv",sep=",",header=TRUE)
 TINDICES<-  read.csv ("data/DiatomMetricsJulyTemp.csv",sep=",",header=TRUE)
 
@@ -48,8 +48,8 @@ multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
 
 
 #####Calculate the discrimination efficiency of metrics#
-VARDF<- TINDICES
-VAR<- which(colnames(VARDF)=="Jtemp")
+VARDF<- INDICES
+VAR<- which(colnames(VARDF)=="TP_MGL")
 QUANT<-quantile(VARDF[,VAR],0.25)
 LGrp<- VARDF[which(VARDF[,VAR]<=QUANT),]
 L75 <- quantile(LGrp$H,0.75)
@@ -92,9 +92,10 @@ bp1<- ggplot(INDICES,aes(x=GRP,y=H,fill=GRP))+
   geom_boxplot(aes(fill=GRP))+
   ylim(0,1)+
   labs(y="Relative Abundance TP Tolerant")+
-  theme(legend.position="none",axis.title.x=element_blank(),plot.title=element_text(hjust=0),
-        plot.title=element_text(size=10),axis.text=element_text(size=10),
-        axis.text.x=element_blank(),axis.title.x=element_text(size=10),axis.title.y=element_text(size=10))+
+  theme(legend.position="none",axis.title.x=element_blank(),
+       # plot.title=element_text(hjust=0),plot.title=element_text(size=10),
+        axis.text.x=element_blank(),
+       axis.title.y=element_text(size=10))+
   scale_fill_manual(values=c("black","white"))+
   annotate("text",x=1,y=1,label="Total Phosphorus",size=3)+
   geom_hline(yintercept = quantile(INDICES$H,0.5),size=2,col="gray46")
@@ -104,8 +105,9 @@ bp2<- ggplot(INDICES,aes(x=GRP,y=L,fill=GRP))+
   geom_boxplot(aes(fill=GRP))+
   ylim(0,1)+
   labs(y="Relative Abundance TP Sensitive")+
-  theme(legend.position="none",axis.title.x=element_blank(),plot.title=element_text(hjust=0),
-        plot.title=element_text(size=10),axis.text=element_text(size=10),
+  theme(legend.position="none",axis.title.x=element_blank(),
+        #plot.title=element_text(hjust=0),plot.title=element_text(size=10),
+        axis.text=element_text(size=10),
         axis.text.x=element_blank(),axis.title.y=element_text(size=10))+
   scale_fill_manual(values=c("black","white"))+
   annotate("text",x=1,y=1,label="Total Phosphorus",size=3)+
@@ -116,8 +118,8 @@ bp3<- ggplot(INDICES,aes(x=GRP,y=R,fill=GRP))+
   ylim(0,10)+
   labs(y="Tolerant to Sensitive TP Index")+
   theme(legend.position="none",
-        plot.title=element_text(hjust=0),
-        plot.title=element_text(size=10),axis.text=element_text(size=10),
+        #plot.title=element_text(hjust=0),plot.title=element_text(size=10),
+        axis.text=element_text(size=10),
         axis.title.y=element_text(size=10),axis.title.x=element_blank())+
   scale_fill_manual(values=c("black","white"))+
   annotate("text",x=1,y=10,label="Total Phosphorus",size=3)+
