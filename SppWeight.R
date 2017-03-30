@@ -1,4 +1,4 @@
-setwd ("/Users/tbecker/Documents/Projects/GitHubProjects/DiatomTPMetrics") 
+setwd ("") #SETWD
 
 library(ggplot2)
 
