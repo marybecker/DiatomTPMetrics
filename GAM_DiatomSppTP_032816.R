@@ -1,10 +1,10 @@
 #######Calculate Tolerance Values for Individual Species#####
 
-setwd ("")#SET WD
+setwd ("/Users/tbecker/Documents/Projects/GitHubProjects/DiatomTPMetrics")#SET WD
 
 library(gam)
 
-spp <- read.csv ("data/SPP_033017.csv",header=TRUE,row.names=1)
+spp <- read.csv ("data/SPP_040617.csv",header=TRUE,row.names=1)
 TP <- read.csv ("data/TP.csv",header=TRUE,row.names=1)
 TP$TP <- log(TP$TP+1)
 
@@ -175,10 +175,10 @@ names(ROCCnt)<-taxa.names
 
 CurveCnt<- cbind(ROCCnt,IncrCnt,DecrCnt,UniCnt)
 
-write.table(CurveCnt,"CurveSppGAM033017.csv",sep=",",row.names=TRUE,col.names=NA)
+write.table(CurveCnt,"CurveSppGAM040617.csv",sep=",",row.names=TRUE,col.names=NA)
 
 
-#######Plots with Whole Model#############
+#######Whole Model Calc With Plots#############
 ######################################################
 
 #Merge ENV & SPP Datasets#
@@ -246,8 +246,8 @@ for (i in 1:length(taxa.names)) {
                         paste("GAM","_",taxa.names[i],".tiff"))
   tiff(file=file_name,width=600,height=600,pointsize=20)
   
-  plot(x=cutm, y=vals, xlab = "Total Phosphorus (mg/L)", 
-       ylab = "Probability of occurrence", ylim = c(0,1),
+  plot(x=cutm, y=vals, xlab = "Log + 1 Total Phosphorus (mg/L)", 
+       ylab = "Probability of occurrence", ylim = c(0,1), log="x",
        main = taxa.names[i],pch=16,col="black")		
   # Plot mean fit as a solid line.		
   lines(x= SPP.TP$TP[iord], y= mean.resp[iord],col="red",lwd=2)
@@ -275,5 +275,5 @@ for (i in 1:length(taxa.names)) {
 }
 
 names(chi)<- taxa.names
-write.table(chi,"GAM_ChiSquareANOVA.csv",sep=",",row.names=TRUE)
+write.table(chi,"GAM_ChiSquareANOVA040517.csv",sep=",",row.names=TRUE)
 

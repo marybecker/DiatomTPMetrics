@@ -1,6 +1,6 @@
-setwd ("")#SET WD#
+setwd ("/Users/tbecker/Documents/Projects/GitHubProjects/DiatomTPMetrics")#SET WD#
 
-INDICES <-  read.csv ("data/DiatomMetrics_033017.csv",sep=",",header=TRUE)
+INDICES <-  read.csv ("data/DiatomMetrics_040517.csv",sep=",",header=TRUE)
 pHINDICES<- read.csv ("data/DiatomMetricspH.csv",sep=",",header=TRUE)
 TINDICES<-  read.csv ("data/DiatomMetricsJulyTemp.csv",sep=",",header=TRUE)
 
@@ -48,9 +48,9 @@ multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
 
 
 #####Calculate the discrimination efficiency of metrics#
-VARDF<- INDICES
-VAR<- which(colnames(VARDF)=="TP_MGL")
-QUANT<-quantile(VARDF[,VAR],0.25)
+VARDF<- INDICES  ##Change DF input to calculate for different dataset
+VAR<- which(colnames(VARDF)=="TP_MGL")  ##Change column input to associate with correct dataset variable
+QUANT<-quantile(VARDF[,VAR],0.5)
 LGrp<- VARDF[which(VARDF[,VAR]<=QUANT),]
 L75 <- quantile(LGrp$H,0.75)
 L25 <- quantile(LGrp$L,0.25)
@@ -75,6 +75,8 @@ GrpSubset <- VARDF[which(VARDF[,VAR]>QUANT& VARDF$R >LR75),]
 n_subset <- length(GrpSubset$ID)
 DIDE<-n_subset/n
 
+
+#####Run appropriate variable to save and compare after run above#####
 TPDiatom<-rbind(TolMetDE,SenMetDE,DIDE)
 pHDiatom<-rbind(TolMetDE,SenMetDE,DIDE)
 TempDiatom<-rbind(TolMetDE,SenMetDE,DIDE)
@@ -95,10 +97,11 @@ bp1<- ggplot(INDICES,aes(x=GRP,y=H,fill=GRP))+
   theme(legend.position="none",axis.title.x=element_blank(),
        # plot.title=element_text(hjust=0),plot.title=element_text(size=10),
         axis.text.x=element_blank(),
-       axis.title.y=element_text(size=10))+
+        axis.text.y=element_text(size=30),
+        axis.title.y=element_text(size=30))+
   scale_fill_manual(values=c("black","white"))+
-  annotate("text",x=1,y=1,label="Total Phosphorus",size=3)+
-  geom_hline(yintercept = quantile(INDICES$H,0.5),size=2,col="gray46")
+  annotate("text",x=1,y=1,label="Total Phosphorus",size=10)#+
+  #geom_hline(yintercept = quantile(INDICES$H,0.5),size=2,col="gray46")
 
 
 bp2<- ggplot(INDICES,aes(x=GRP,y=L,fill=GRP))+
@@ -107,11 +110,11 @@ bp2<- ggplot(INDICES,aes(x=GRP,y=L,fill=GRP))+
   labs(y="Relative Abundance TP Sensitive")+
   theme(legend.position="none",axis.title.x=element_blank(),
         #plot.title=element_text(hjust=0),plot.title=element_text(size=10),
-        axis.text=element_text(size=10),
-        axis.text.x=element_blank(),axis.title.y=element_text(size=10))+
+        axis.text=element_text(size=30),
+        axis.text.x=element_blank(),axis.title.y=element_text(size=30))+
   scale_fill_manual(values=c("black","white"))+
-  annotate("text",x=1,y=1,label="Total Phosphorus",size=3)+
-  geom_hline(yintercept = quantile(INDICES$L,0.5),size=2,col="gray46")
+  annotate("text",x=1,y=1,label="Total Phosphorus",size=10)#+
+  #geom_hline(yintercept = quantile(INDICES$L,0.5),size=2,col="gray46")
 
 bp3<- ggplot(INDICES,aes(x=GRP,y=R,fill=GRP))+
   geom_boxplot(aes(fill=GRP))+
@@ -119,69 +122,66 @@ bp3<- ggplot(INDICES,aes(x=GRP,y=R,fill=GRP))+
   labs(y="Tolerant to Sensitive TP Index")+
   theme(legend.position="none",
         #plot.title=element_text(hjust=0),plot.title=element_text(size=10),
-        axis.text=element_text(size=10),
-        axis.title.y=element_text(size=10),axis.title.x=element_blank())+
+        axis.text=element_text(size=30),
+        axis.title.y=element_text(size=30),axis.title.x=element_blank())+
   scale_fill_manual(values=c("black","white"))+
-  annotate("text",x=1,y=10,label="Total Phosphorus",size=3)+
-  geom_hline(yintercept = quantile(INDICES$R,0.5),size=2,col="gray46")
+  annotate("text",x=1,y=10,label="Total Phosphorus",size=10)#+
+  #geom_hline(yintercept = quantile(INDICES$R,0.5),size=2,col="gray46")
 
 bp4<- ggplot(pHINDICES,aes(x=GRP,y=H,fill=GRP))+
   geom_boxplot(aes(fill=GRP))+
   ylim(0,1)+
-  theme(legend.position="none",axis.title.x=element_blank(),axis.title.y=element_blank(),plot.title=element_text(hjust=0),
-        plot.title=element_text(size=10),axis.text=element_text(size=10),axis.text.y=element_blank(),
+  theme(legend.position="none",axis.title.x=element_blank(),axis.title.y=element_blank(),
+        axis.text=element_text(size=30),axis.text.y=element_blank(),
         axis.text.x=element_blank())+
   scale_fill_manual(values=c("black","white"))+
-  annotate("text",x=1,y=1,label="pH",size=3)
+  annotate("text",x=1,y=1,label="pH",size=10)
 
 bp5<- ggplot(pHINDICES,aes(x=GRP,y=L,fill=GRP))+
   geom_boxplot(aes(fill=GRP))+
   ylim(0,1)+
-  theme(legend.position="none",axis.title.x=element_blank(),axis.title.y=element_blank(),plot.title=element_text(hjust=0),
-        plot.title=element_text(size=10),axis.text=element_text(size=10),axis.text.y=element_blank(),
+  theme(legend.position="none",axis.title.x=element_blank(),axis.title.y=element_blank(),
+        axis.text=element_text(size=30),axis.text.y=element_blank(),
         axis.text.x=element_blank())+
   scale_fill_manual(values=c("black","white"))+
-  annotate("text",x=1,y=1,label="pH",size=3)
+  annotate("text",x=1,y=1,label="pH",size=10)
 
 bp6<- ggplot(pHINDICES,aes(x=GRP,y=R,fill=GRP))+
   geom_boxplot(aes(fill=GRP))+
   ylim(0,10)+
   theme(legend.position="none",axis.title.y=element_blank(),
-        plot.title=element_text(hjust=0),
-        plot.title=element_text(size=10),axis.text=element_text(size=10),
+        axis.text=element_text(size=30),
         axis.text.y=element_blank(),axis.title.x=element_blank())+
   scale_fill_manual(values=c("black","white"))+
-  annotate("text",x=1,y=10,label="pH",size=3)
+  annotate("text",x=1,y=10,label="pH",size=10)
 
 bp7<- ggplot(TINDICES,aes(x=GRP,y=H,fill=GRP))+
   geom_boxplot(aes(fill=GRP))+
   ylim(0,1)+
-  theme(legend.position="none",axis.title.x=element_blank(),axis.title.y=element_blank(),plot.title=element_text(hjust=0),
-        plot.title=element_text(size=10),axis.text=element_text(size=10),axis.text.y=element_blank(),
-        axis.text.x=element_blank(),axis.title.x=element_text(size=10))+
+  theme(legend.position="none",axis.title.x=element_blank(),axis.title.y=element_blank(),
+        axis.text.y=element_blank())+
   scale_fill_manual(values=c("black","white"))+
-  annotate("text",x=1,y=1,label="Temperature",size=3)
+  annotate("text",x=1,y=1,label="Temperature",size=10)
 
 bp8<- ggplot(TINDICES,aes(x=GRP,y=L,fill=GRP))+
   geom_boxplot(aes(fill=GRP))+
   ylim(0,1)+
-  theme(legend.position="none",axis.title.x=element_blank(),axis.title.y=element_blank(),plot.title=element_text(hjust=0),
-        plot.title=element_text(size=10),axis.text=element_text(size=10),axis.text.y=element_blank(),
+  theme(legend.position="none",axis.title.x=element_blank(),axis.title.y=element_blank(),
+        axis.text=element_text(size=30),axis.text.y=element_blank(),
         axis.text.x=element_blank())+
   scale_fill_manual(values=c("black","white"))+
-  annotate("text",x=1,y=1,label="Temperature",size=3)
+  annotate("text",x=1,y=1,label="Temperature",size=10)
 
 bp9<- ggplot(TINDICES,aes(x=GRP,y=R,fill=GRP))+
   geom_boxplot(aes(fill=GRP))+
   ylim(0,10)+
   theme(legend.position="none",axis.title.y=element_blank(),
-        plot.title=element_text(hjust=0),
-        plot.title=element_text(size=10),axis.text=element_text(size=10),
+        axis.text=element_text(size=30),
         axis.text.y=element_blank(),axis.title.x=element_blank())+
   scale_fill_manual(values=c("black","white"))+
-  annotate("text",x=1,y=10,label="Temperature",size=3)
+  annotate("text",x=1,y=10,label="Temperature",size=10)
 
-pdf(file="DiatomRelAbundPlots.pdf",width=10,height=7)
+tiff(file="DiatomRelAbundPlots.tiff",width=2400,height=1800)
 multiplot(bp1,bp2,bp3,bp4,bp5,bp6,bp7,bp8,bp9,cols=3)
 dev.off()
 
