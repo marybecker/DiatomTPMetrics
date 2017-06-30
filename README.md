@@ -7,19 +7,18 @@ Biological tolerance metrics developed by combining responses of individual diat
 
 ## DATA
 
-**SPP_040617:** <br> 
+**SPP_040617:** 
 Species occurrence data for each sample used in the analysis <br>
-**TP:** <br> 
+**TP:** 
 Total Phosphorus data for each sample used in the analysis <br>
-**DiatomMetrics_040517:** <br> 
+**DiatomMetrics_040517:** 
 Combined species responses for each sample with Total Phosphorus groups Low (L) & High (H) <br>
 H - % Relative Abundance Tolerant Species <br>
 L - % Relative Abundance Sensitive Species <br>
 R - TP Index<br>
-**DiatomMetricspH:** <br>  
+**DiatomMetricspH:**  
 pH data with L / H groups <br>
-**DiatomMetricsJulyTemp:** <br>    
-Temperature data with L / H groups 
+**DiatomMetricsJulyTemp:** Temperature data with L / H groups 
 
 ## ANALYSIS
 
