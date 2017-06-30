@@ -1,4 +1,4 @@
-setwd ("/Users/tbecker/Documents/Projects/GitHubProjects/DiatomTPMetrics")#SET WD#
+setwd ("")#SET WD#
 
 INDICES <-  read.csv ("data/DiatomMetrics_040517.csv",sep=",",header=TRUE)
 pHINDICES<- read.csv ("data/DiatomMetricspH.csv",sep=",",header=TRUE)
@@ -187,12 +187,6 @@ dev.off()
 
 
 
-####Kruskal Wallis and Dunn Test for CT DEEP and NAWQA TP Groups############
-###########################################################################
-
-dunn.test(INDICES$R,INDICES$GRP,kw=TRUE)
-dunn.test(INDICES$H,INDICES$GRP,kw=TRUE)
-dunn.test(INDICES$L,INDICES$GRP,kw=TRUE)
 
 #########Overall Percentiles of Metrics#######################
 #############################################################
@@ -202,6 +196,6 @@ L_quant <- quantile(INDICES$L,c(0.1,0.25,0.5,0.75,0.9))
 R_quant <- quantile(INDICES$R,c(0.1,0.25,0.5,0.75,0.9))
 
 quant <- rbind(H_quant,L_quant,R_quant)
-write.csv(quant,"DiatomMetricsPercentiles_101916.csv")
+
 
 
