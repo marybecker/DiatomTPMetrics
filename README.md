@@ -5,3 +5,27 @@ Biological tolerance metrics developed by combining responses of individual diat
 * R ver. 3.3.1, 
 * gam, ggplot2, grid, plyr, reshape2
 
+### DATA
+
+#### SPP_040617: 
+Species occurrence data for each sample used in the analysis
+#### TP: 
+Total Phosphorus data for each sample used in the analysis
+#### DiatomMetrics_040517: 
+Combined species responses for each sample with Total Phosphorus groups Low (L) & High (H) <br>
+H - % Relative Abundance Tolerant Species <br>
+L - % Relative Abundance Sensitive Species <br>
+R - TP Index<br>
+#### DiatomMetricspH:  
+pH data with L / H groups
+#### DiatomMetricsJulyTemp:  
+Temperature data with L / H groups
+
+### ANALYSIS
+
+#### GAM_DiatomSppTP_032816.R:  
+Calculates tolerance values for each diatom species
+#### GAMRun040517:
+Tolerance values analysis with results used in paper.  Results could vary slightly due to bootstrap analysis with additional runs.
+#### DiscriminationEfficiency_Diatom_LH.R:
+Calculates discrimination efficiency for metrics and creates boxplots.
