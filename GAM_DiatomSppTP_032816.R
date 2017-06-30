@@ -1,6 +1,6 @@
 #######Calculate Tolerance Values for Individual Species#####
 
-setwd ("/Users/tbecker/Documents/Projects/GitHubProjects/DiatomTPMetrics")#SET WD
+setwd ("")#SET WD
 
 library(gam)
 
@@ -242,8 +242,8 @@ for (i in 1:length(taxa.names)) {
   # Now generate the plot
   # Plot binned observational data as symbols.
   
-  file_name<- file.path("/Users/tbecker/Documents/Projects/GitHubProjects/DiatomTPMetrics/Plots",
-                        paste("GAM","_",taxa.names[i],".tiff"))
+  file_name<- file.path("",
+                        paste("GAM","_",taxa.names[i],".tiff"))##Specify file path!!
   tiff(file=file_name,width=600,height=600,pointsize=20)
   
   plot(x=cutm, y=vals, xlab = "Log + 1 Total Phosphorus (mg/L)", 
