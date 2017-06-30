@@ -28,4 +28,6 @@ Calculates tolerance values for each diatom species
 #### GAMRun040517 (RWorkspace):
 Tolerance values analysis with results used in paper.  Results could vary slightly due to bootstrap analysis with additional runs.
 #### DiscriminationEfficiency_Diatom_LH.R:
-Calculates discrimination efficiency for metrics and creates boxplots.
+Calculates discrimination efficiency for metrics and creates boxplots.<br><br>
+
+*Data Visualization Tool in Development.  Current DRAFT version at: https://ctriverresearch.shinyapps.io/TPAQLapp*
