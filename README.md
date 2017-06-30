@@ -25,7 +25,7 @@ Temperature data with L / H groups
 
 #### GAM_DiatomSppTP_032816.R:  
 Calculates tolerance values for each diatom species
-#### GAMRun040517:
+#### GAMRun040517 (RWorkspace):
 Tolerance values analysis with results used in paper.  Results could vary slightly due to bootstrap analysis with additional runs.
 #### DiscriminationEfficiency_Diatom_LH.R:
 Calculates discrimination efficiency for metrics and creates boxplots.
