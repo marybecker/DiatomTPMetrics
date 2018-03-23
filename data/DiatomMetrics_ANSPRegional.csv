@@ -1,0 +1,156 @@
+ID,Station_Name,ANSPEcoReg,AWQ_Station_ID,TP_MGL,H,L
+S14129_2015,Beacon Hill Brook,TP--eastern plains (diatoms),14129,0.021,0.008169935,0.730392157
+S14241_2012,Hockanum River,TP--eastern plains (diatoms),14241,0.377666667,0.223622047,0.033070866
+S14241_2016,Hockanum River,TP--eastern plains (diatoms),14241,3.76,0.176182708,0.075040783
+S14263_2014,Kahn Brook,TP--eastern plains (diatoms),14263,0.127333333,0.0906298,0.003072197
+S14278_2014,Little River,TP--eastern plains (diatoms),14278,0.0135,,0.017001546
+S14290_2013,Menunketesuck River,TP--eastern plains (diatoms),14290,0.009,0.01,0.786666667
+S14293_2013,Mianus River,TP--eastern plains (diatoms),14293,0.037666667,0.08,0.121666667
+S14308_2013,Muddy River,TP--eastern plains (diatoms),14308,0.0645,0.031666667,0.246666667
+S14317_2012,Naugatuck River,TP--eastern plains (diatoms),14317,0.441,0.092532468,0.125
+S14317_2014,Naugatuck River,TP--eastern plains (diatoms),14317,0.308,0.010719755,0.222052067
+S14317_2015,Naugatuck River,TP--eastern plains (diatoms),14317,0.328,0.016666667,0.203333333
+S14317_2016,Naugatuck River,TP--eastern plains (diatoms),14317,0.135,0.016207455,0.147487844
+S14332_2016,Naugatuck River,TP--eastern plains (diatoms),14332,0.067,0.016339869,0.200980392
+S14341_2016,Naugatuck River,TP--eastern highlands (diatoms),14341,0.0265,0.020700637,0.482484076
+S14362_2016,Ridgefield Brook,TP--eastern plains (diatoms),14362,0.253,0.093699515,0.140549273
+S14377_2012,Pattaconk Brook,TP--eastern plains (diatoms),14377,0.017666667,0.03963964,0.194594595
+S14385_2016,Pequabuck River,TP--eastern plains (diatoms),14385,0.029,,0.317803661
+S14390_2016,Pequabuck River,TP--eastern plains (diatoms),14390,0.433,0.11147541,0.242622951
+S14392_2012,Pequabuck River,TP--eastern plains (diatoms),14392,0.5425,0.122923588,0.207641196
+S14392_2014,Pequabuck River,TP--eastern plains (diatoms),14392,0.692,0.036858974,0.201923077
+S14392_2015,Pequabuck River,TP--eastern plains (diatoms),14392,0.374,0.084690554,0.039087948
+S14392_2016,Pequabuck River,TP--eastern plains (diatoms),14392,1.06,0.090759076,0.189768977
+S14393_2016,Pequabuck River,TP--eastern plains (diatoms),14393,0.808,0.126853377,0.093904448
+S14397_2012,Piper Brook,TP--eastern plains (diatoms),14397,0.04,0.263157895,0.255639098
+S14404_2015,Pomperaug River,TP--eastern plains (diatoms),14404,0.03,0.001666667,0.351666667
+S14410_2012,Quinebaug River,TP--eastern plains (diatoms),14410,0.022,,0.720930233
+S14410_2013,Quinebaug River,TP--eastern plains (diatoms),14410,0.024,0.02,0.256666667
+S14410_2014,Quinebaug River,TP--eastern plains (diatoms),14410,0.0215,0.02,0.124615385
+S14410_2015,Quinebaug River,TP--eastern plains (diatoms),14410,0.0195,0.00660066,0.641914191
+S14410_2016,Quinebaug River,TP--eastern plains (diatoms),14410,0.0285,0.362728785,0.252911814
+S14413_2012,Quinnipiac River,TP--eastern plains (diatoms),14413,0.2305,0.226152197,0.175777063
+S14413_2013,Quinnipiac River,TP--eastern plains (diatoms),14413,0.1644,0.073333333,0.155
+S14413_2014,Quinnipiac River,TP--eastern plains (diatoms),14413,0.164,0.032171582,0.111260054
+S14413_2015,Quinnipiac River,TP--eastern plains (diatoms),14413,0.2465,0.119800333,0.111480865
+S14413_2016,Quinnipiac River,TP--eastern plains (diatoms),14413,0.085,0.014516129,0.217741935
+S14414_2012,Quinnipiac River,TP--eastern plains (diatoms),14414,0.137,0.092985318,0.034257749
+S14414_2013,Quinnipiac River,TP--eastern plains (diatoms),14414,0.1264,0.118333333,0.031666667
+S14414_2014,Quinnipiac River,TP--eastern plains (diatoms),14414,0.128,0.205792683,0.079268293
+S14414_2015,Quinnipiac River,TP--eastern plains (diatoms),14414,0.1805,0.090609555,0.143327842
+S14414_2016,Quinnipiac River,TP--eastern plains (diatoms),14414,0.132,0.069875776,0.118012422
+S14436_2012,Salmon Brook,TP--eastern plains (diatoms),14436,0.01775,0.02955665,0.024630542
+S14441_2012,Salmon River,TP--eastern plains (diatoms),14441,0.0155,0.011363636,0.233766234
+S14441_2013,Salmon River,TP--eastern plains (diatoms),14441,0.00875,0.01,0.143333333
+S14441_2014,Salmon River,TP--eastern plains (diatoms),14441,0.0165,0.002928258,0.026354319
+S14441_2015,Salmon River,TP--eastern plains (diatoms),14441,0.013,0.006514658,0.325732899
+S14441_2016,Salmon River,TP--eastern plains (diatoms),14441,0.021,,0.468646865
+S14442_2012,Sandy Brook,TP--eastern highlands (diatoms),14442,0.012,,0.570261438
+S14442_2014,Sandy Brook,TP--eastern highlands (diatoms),14442,0.0095,0.012693935,0.162200282
+S14442_2015,Sandy Brook,TP--eastern highlands (diatoms),14442,0.0135,0.243333333,0.398333333
+S14444_2013,Saugatuck River,TP--eastern plains (diatoms),14444,0.0145,0.005,0.073333333
+S14444_2014,Saugatuck River,TP--eastern plains (diatoms),14444,0.018,0.003311258,0.011589404
+S14444_2015,Saugatuck River,TP--eastern plains (diatoms),14444,0.023,0.039669421,0.117355372
+S14444_2016,Saugatuck River,TP--eastern plains (diatoms),14444,0.038,0.011608624,0.182421227
+S14450_2012,Shepaug River,TP--eastern plains (diatoms),14450,0.0255,0.009615385,0.022435897
+S14450_2014,Shepaug River,TP--eastern plains (diatoms),14450,0.026333333,,0.036363636
+S14450_2015,Shepaug River,TP--eastern plains (diatoms),14450,0.027,,0.156666667
+S14450_2016,Shepaug River,TP--eastern plains (diatoms),14450,0.037,0.0112,0.3856
+S14458_2014,Still River,TP--eastern plains (diatoms),14458,0.14,0.238249595,0.004862237
+S14458_2015,Still River,TP--eastern plains (diatoms),14458,0.083,0.283849918,0.032626427
+S14458_2016,Still River,TP--eastern plains (diatoms),14458,0.112,0.021452145,0.052805281
+S14462_2016,Still River,TP--eastern plains (diatoms),14462,0.026,0.016611296,0.563122924
+S14470_2012,Tankerhoosen River,TP--eastern plains (diatoms),14470,0.007,0.030612245,0.081632653
+S14473_2013,Ten Mile River,TP--eastern plains (diatoms),14473,0.021,,0.133333333
+S14523_2015,Burton Brook,TP--eastern highlands (diatoms),14523,0.009,0.101328904,0.749169435
+S14553_2013,Norwalk River,TP--eastern plains (diatoms),14553,0.083,0.06,0.11
+S14555_2016,Norwalk River,TP--eastern plains (diatoms),14555,0.096,0.051409619,0.358208955
+S14581_2014,Willimantic River,TP--eastern plains (diatoms),14581,0.08175,0.01399689,0.138413686
+S14669_2012,French River,TP--eastern plains (diatoms),14669,0.034,0.033285094,0.2170767
+S14669_2013,French River,TP--eastern plains (diatoms),14669,0.031,0.028333333,0.491666667
+S14669_2014,French River,TP--eastern plains (diatoms),14669,0.029,0.131578947,0.134868421
+S14669_2015,French River,TP--eastern plains (diatoms),14669,0.026,0.02295082,0.401639344
+S14669_2016,French River,TP--eastern plains (diatoms),14669,0.035,0.105785124,0.338842975
+S14706_2013,Whitford Brook,TP--eastern plains (diatoms),14706,0.037333333,0.035,0.253333333
+S14720_2013,Green Fall River,TP--eastern plains (diatoms),14720,0.011,0.041666667,0.218333333
+S14721_2013,Shunock River,TP--eastern plains (diatoms),14721,0.021666667,0.02,0.161666667
+S14732_2014,Poquetanuck Brook (Hewitt Brook),TP--eastern plains (diatoms),14732,0.056333333,0.02020202,0.042929293
+S14733_2014,Oxoboxo Brook,TP--eastern plains (diatoms),14733,0.015,,0.055643879
+S14740_2015,Quaker Brook,TP--eastern highlands (diatoms),14740,0.021,0.128078818,0.279146141
+S14825_2015,Naugatuck River,TP--eastern plains (diatoms),14825,0.039,0.013333333,0.413333333
+S14866_2014,Stickney Hill Brook,TP--eastern plains (diatoms),14866,0.026666667,0.006747638,0.746288799
+S15003_2014,Wappoquia Brook,TP--eastern plains (diatoms),15003,0.034333333,0.119800333,0.214642263
+S15004_2014,Housatonic River,TP--eastern highlands (diatoms),15004,0.032,0.032948929,0.682042834
+S15051_2014,Durkee Brook,TP--eastern plains (diatoms),15051,0.089,0.373970346,0.029654036
+S15169_2012,Roaring Brook,TP--eastern plains (diatoms),15169,0.024,0.006785411,0.170483461
+S15176_2014,Natchaug River,TP--eastern plains (diatoms),15176,0.018666667,0.001517451,0.037936267
+S15201_2013,Spoonshop Brook,TP--eastern plains (diatoms),15201,0.02,0.034941764,0.289517471
+S15304_2014,Eagleville Brook,TP--eastern plains (diatoms),15304,0.019666667,0.013114754,0.578688525
+S15315_2012,Burnhams Brook,TP--eastern plains (diatoms),15315,0.01,0.004926108,0.618226601
+S15406_2012,Little Brook,TP--eastern plains (diatoms),15406,0.0255,0.151382824,0.053857351
+S15413_2012,Belcher Brook,TP--eastern plains (diatoms),15413,0.025,0.023294509,0.119800333
+S15479_2012,Quinnipiac River,TP--eastern plains (diatoms),15479,0.0375,0.095867769,0.028099174
+S15479_2013,Quinnipiac River,TP--eastern plains (diatoms),15479,0.066,0.1,0.038333333
+S15479_2014,Quinnipiac River,TP--eastern plains (diatoms),15479,0.042,0.041935484,0.022580645
+S15479_2015,Quinnipiac River,TP--eastern plains (diatoms),15479,0.0625,0.198333333,0.14
+S15479_2016,Quinnipiac River,TP--eastern plains (diatoms),15479,0.053,0.042168675,0.445783133
+S15520_2014,Bonemill Brook,TP--eastern plains (diatoms),15520,0.03,0.001582278,0.55221519
+S15703_2012,West Branch Salmon Brook,TP--eastern highlands (diatoms),15703,0.00775,0.008510638,0.424113475
+S15796_2013,PENDLETON HILL BROOK,TP--eastern plains (diatoms),15796,0.02325,0.006666667,0.626666667
+S15837_2012,Farmington River,TP--eastern highlands (diatoms),15837,0.014,0.07704918,0.404918033
+S15858_2013,Cricker Brook,TP--eastern plains (diatoms),15858,0.022,0.031666667,0.13
+S15964_2012,Thompson Brook,TP--eastern plains (diatoms),15964,0.021,0.022690438,0.137763371
+S15993_2015,Naugatuck River,TP--eastern plains (diatoms),15993,0.0365,0.013179572,0.481054366
+S16022_2015,Weekeepeemee River,TP--eastern plains (diatoms),16022,0.023666667,0.008333333,0.478333333
+S16049_2015,Naugatuck River,TP--eastern highlands (diatoms),16049,0.0465,0.155993432,0.197044335
+S16050_2016,Naugatuck River,TP--eastern highlands (diatoms),16050,0.159,0.358677686,0.175206612
+S16122_2012,Early Brook,TP--eastern plains (diatoms),16122,0.0145,0.005813953,0.488372093
+S16125_2015,Whiting Brook,TP--eastern highlands (diatoms),16125,0.008,0.124792013,0.542429285
+S16128_2014,Stonehouse Brook,TP--eastern plains (diatoms),16128,0.016,0.003169572,0.160063391
+S16144_2013,Aspetuck River,TP--eastern plains (diatoms),16144,0.02,0.006666667,0.51
+S16191_2015,Hall Meadow Brook,TP--eastern highlands (diatoms),16191,0.016666667,0.064569536,0.582781457
+S16239_2012,West Branch Farmington River,TP--eastern highlands (diatoms),16239,0.0085,0.006839945,0.268125855
+S16258_2012,West Branch Farmington River,TP--eastern highlands (diatoms),16258,0.007,,0.632432432
+S16268_2015,Farmill River,TP--eastern plains (diatoms),16268,0.034333333,0.011494253,0.197044335
+S16311_2012,Reservoir Brook,TP--eastern plains (diatoms),16311,0.008,0.00624025,0.024960998
+S16385_2012,Beaver Brook,TP--eastern highlands (diatoms),16385,0.008666667,0.26850508,0.454281567
+S16428_2013,Little River,TP--eastern plains (diatoms),16428,0.014,0.011666667,0.526666667
+S16440_2012,Fawn Brook,TP--eastern plains (diatoms),16440,0.045666667,0.023148148,0.041666667
+S16505_2012,BIBLE ROCK BROOK,TP--eastern plains (diatoms),16505,0.014333333,0.00154321,0.547839506
+S16524_2015,BOG HOLLOW BROOK,TP--eastern highlands (diatoms),16524,0.029666667,0.618270799,0.220228385
+S16583_2013,COMSTOCK BROOK,TP--eastern plains (diatoms),16583,0.028333333,0.076666667,0.213333333
+S16588_2013,COOPER POND BROOK,TP--eastern plains (diatoms),16588,0.044,0.053333333,0.333333333
+S16599_2015,CROSS BROOK,TP--eastern plains (diatoms),16599,0.019666667,0.009756098,0.069918699
+S16603_2012,DAY MEADOW BROOK,TP--eastern plains (diatoms),16603,0.015,0.002743484,0.694101509
+S16679_2014,Fry Brook,TP--eastern plains (diatoms),16679,0.04375,0.045454545,0.076298701
+S16758_2012,HOWELL'S BROOK,TP--eastern highlands (diatoms),16758,0.016333333,0.001501502,0.942942943
+S16833_2014,McCarthys Brook,TP--eastern plains (diatoms),16833,0.034,0.05785124,0.115702479
+S16846_2012,MILL CREEK,TP--eastern plains (diatoms),16846,0.016666667,0.001587302,0.649206349
+S16851_2013,MILL RIVER,TP--eastern plains (diatoms),16851,0.0335,0.038333333,0.165
+S16881_2013,MUNGER BROOK,TP--eastern plains (diatoms),16881,0.021,0.03,0.518333333
+S16885_2014,Natchaug River,TP--eastern plains (diatoms),16885,0.018,0.005,0.078333333
+S16928_2014,Obwebetuck Brook,TP--eastern plains (diatoms),16928,0.023,0.009756098,0.07804878
+S16972_2015,PITCH BROOK,TP--eastern plains (diatoms),16972,0.012666667,0.014851485,0.50660066
+S16984_2015,PURCHASE BROOK,TP--eastern plains (diatoms),16984,0.016,0.019966722,0.392678869
+S17061_2013,SPRING LOT BROOK,TP--eastern plains (diatoms),17061,0.026,0.01,0.325
+S17181_2015,WEST BRANCH BANTAM RIVER,TP--eastern highlands (diatoms),17181,0.032,0.10766721,0.453507341
+S17201_2013,Willys Meadow Brook,TP--eastern plains (diatoms),17201,0.036,0.028333333,0.026666667
+S17271_2012,Cherry Brook,TP--eastern highlands (diatoms),17271,0.0125,0.194719472,0.158415842
+S17295_2014,Bigelow Brook,TP--eastern plains (diatoms),17295,0.009,0.008103728,0.732576985
+S17342_2015,Ball Pond Brook,TP--eastern plains (diatoms),17342,0.031666667,0.011666667,0.241666667
+S17398_2012,Negro Hill Brook,TP--eastern plains (diatoms),17398,0.017,0.002980626,0.019374069
+S17565_2014,Long Branch Brook,TP--eastern plains (diatoms),17565,0.063,0.017770598,0.324717286
+S17568_2014,Sherman Brook,TP--eastern plains (diatoms),17568,0.023,0.007788162,0.112149533
+S17816_2014,INDIAN HUT BROOK,TP--eastern plains (diatoms),17816,0.075,0.044880785,0.050490884
+S17852_2014,Shady Oak School House Brook,TP--eastern plains (diatoms),17852,0.02725,0.0016,0.0432
+S18158_2012,Lydall Brook,TP--eastern plains (diatoms),18158,0.013,0.077720207,0.251295337
+S18159_2012,West Branch Farmington River,TP--eastern highlands (diatoms),18159,0.009,0.05511811,0.05511811
+S18463_2013,Fivemile River,TP--eastern plains (diatoms),18463,0.081,0.15,0.028333333
+S18874_2015,Weekeepeemee River,TP--eastern plains (diatoms),18874,0.016333333,0.00330033,0.353135314
+S18875_2015,Walker Brook,TP--eastern plains (diatoms),18875,0.038,,0.028938907
+S18876_2015,Curtiss Brook,TP--eastern plains (diatoms),18876,0.023333333,0.021666667,0.39
+S18877_2015,Leadmine Brook,TP--eastern plains (diatoms),18877,0.021,0.005,0.516666667
+S18881_2015,Bantam River,TP--eastern plains (diatoms),18881,0.27,0.050819672,0.147540984
+S18882_2015,Cemetery Pond Brook,TP--eastern plains (diatoms),18882,0.118,0.024793388,0.6
+S18883_2015,East Branch Naugatuck River,TP--eastern highlands (diatoms),18883,0.018,0.003311258,0.802980132
+S18884_2015,Shepaug River,TP--eastern plains (diatoms),18884,0.0405,0.001666667,0.133333333
