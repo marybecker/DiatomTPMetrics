@@ -7,13 +7,13 @@ Biological tolerance metrics developed by combining responses of individual diat
 
 ## DATA
 
-**SPP:** 
+**SPP:** <br>
 Species occurrence data for each sample used to develop species models with GAMs <br> <br>
-**SPP_RelAbund:**
+**SPP_RelAbund:**<br>
 Species relative abundance data for each sample used to develop species tolerances with indicator species analysis and weighted averaging<br> <br>
-**TP:** 
+**TP:** <br>
 Total Phosphorus data for each sample used in the analysis <br> <br>
-**Diatom Metrics Data:** 
+**Diatom Metrics Data:** <br>
 Combined species responses for each sample with Total Phosphorus groups Low (L) & High (H) <br>
 H - % Relative Abundance Tolerant Species <br>
 L - % Relative Abundance Sensitive Species <br>
@@ -30,9 +30,9 @@ DiatomMetrics_TESTJTEMP:  Temperature data used to test alternative gradients<br
 
 ## SCRIPTS
 
-#### GAM:  
+#### GAM: <br> 
 Method to develop tolerance values for each diatom species using GAMs and curve shape classification
-#### INDValWA:
+#### INDValWA:<br>
 Method to develop tolerance values for each diatom species using indicator species analysis and weighted averaging
-#### DiscriminationEfficiency_Diatom_LH_10102017.R:
+#### DiscriminationEfficiency_Diatom_LH_10102017.R:<br>
 Calculates discrimination efficiency for metrics and creates boxplots.<br><br>
