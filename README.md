@@ -13,23 +13,26 @@ Species occurrence data for each sample used to develop species models with GAMs
 Species relative abundance data for each sample used to develop species tolerances with indicator species analysis and weighted averaging<br> <br>
 **TP:** 
 Total Phosphorus data for each sample used in the analysis <br> <br>
-**DiatomMetrics Data:** 
-Combined species responses for each sample with Total Phosphorus groups Low (L) & High (H) using the test data <br>
+**Diatom Metrics Data:** 
+Combined species responses for each sample with Total Phosphorus groups Low (L) & High (H) <br>
 H - % Relative Abundance Tolerant Species <br>
 L - % Relative Abundance Sensitive Species <br>
 R - TP Index<br> <br>
-DiatomMetrics_GAM: Diatom Metrics calculated using the GAM analysis
-**DiatomMetricspH:** pH data with L / H groups <br> <br>
-**DiatomMetricsJulyTemp:** 
-Temperature data with L / H groups 
+DiatomMetrics_GAM: Diatom metrics calculated using GAM tolerance values for sites the calibration dataset<br>
+DiatomMetrics_ANSP: Diatom metrics calculated using National tolerance values for sites the calibration dataset<br>
+DiatomMetrics_ANSPRegional:  Diatom metrics calculated using Regional tolerance values for sites the calibration dataset<br>
+DiatomMetrics_IndVal:  Diatom metrics calculated using IndVal/WA tolerance values for sites the calibration dataset<br>
+DiatomMetrics_TESTGAM:  Diatom metrics calculated using GAM tolerance values for sites the test dataset<br>
+DiatomMetrics_TESTANSP: Diatom metrics calculated using National tolerance values for sites the test dataset<br>
+DiatomMetrics_TESTANSPRegional: Diatom metrics calculated using Regional tolerance values for sites the test dataset<br>
+DiatomMetrics_TESTCHEM:  pH and Chloride data used to test alternative gradients<br>
+DiatomMetrics_TESTJTEMP:  Temperature data used to test alternative gradients<br> <br>
 
-## ANALYSIS
+## SCRIPTS
 
-#### GAM_DiatomSppTP_032816.R:  
-Calculates tolerance values for each diatom species
-#### GAMRun040517 (RWorkspace):
-Tolerance values analysis with results used in paper.  Results could vary slightly due to bootstrap analysis with additional runs.
-#### DiscriminationEfficiency_Diatom_LH.R:
+#### GAM:  
+Method to develop tolerance values for each diatom species using GAMs and curve shape classification
+#### INDValWA:
+Method to develop tolerance values for each diatom species using indicator species analysis and weighted averaging
+#### DiscriminationEfficiency_Diatom_LH_10102017.R:
 Calculates discrimination efficiency for metrics and creates boxplots.<br><br>
-
-*Data Visualization Tool in Development.  Current DRAFT version at: https://ctriverresearch.shinyapps.io/TPAQLapp*
